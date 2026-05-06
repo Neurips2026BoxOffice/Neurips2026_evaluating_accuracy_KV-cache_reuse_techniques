@@ -19,7 +19,7 @@
 #   SEEDS_CSV=7,11
 #   DEVICE_POOL_CSV=0,1,2,3,4,5
 #   MAX_PARALLEL_JOBS=<len(DEVICE_POOL_CSV)> by default
-#   MODELS_CSV=qwen3_8B,llama3.1-8BI,mistral
+#   MODELS_CSV=qwen3_8B,llama3.1-8BI,mistral-7B
 #   PROMPT_VARIANT=closed_world
 #   EVAL_PER_CELL_OVERSAMPLED=100
 #   KEEP_PER_CELL=40
@@ -46,12 +46,12 @@ CHUNK_TARGET_TOKENS="${CHUNK_TARGET_TOKENS:-512}"
 SEEDS_CSV="${SEEDS_CSV:-7,11}"
 DEVICE_POOL_CSV="${DEVICE_POOL_CSV:-0,1,2,3,4,5}"
 MAX_PARALLEL_JOBS="${MAX_PARALLEL_JOBS:-}"
-MODELS_CSV="${MODELS_CSV:-qwen3_8B,llama3.1-8BI,mistral}"
+MODELS_CSV="${MODELS_CSV:-qwen3_8B,llama3.1-8BI,mistral-7B}"
 
 declare -A MODEL_PATH_BY_LABEL
 MODEL_PATH_BY_LABEL["qwen3_8B"]="/data/weights/qwen3-8B"
 MODEL_PATH_BY_LABEL["llama3.1-8BI"]="/data/weights/llama3.1-8BI"
-MODEL_PATH_BY_LABEL["mistral"]="/data/weights/mistral"
+MODEL_PATH_BY_LABEL["mistral-7B"]="/data/weights/mistral-7B"
 
 export PATH="/usr/local/python3.11.14/bin:${PATH}"
 export PYTHONPATH="${GEN_ROOT}/src:${SCRIPT_DIR}:${PYTHONPATH:-}"

@@ -30,14 +30,14 @@ Figure-generation code is intentionally not included in this release yet.
 Generation / evaluation models used by the default launchers:
 
 - `llama3.1-8BI`
-- `mistral`
+- `mistral-7B`
 - `qwen3-8B`
 
 BoxOffice filtering defaults:
 
 - `qwen3_8B`
 - `llama3.1-8BI`
-- `mistral`
+- `mistral-7B`
 
 Warm-retrieval / semantic-pool embedding model:
 
@@ -47,7 +47,7 @@ The scripts use local model paths by default, for example:
 
 ```bash
 /data/weights/llama3.1-8BI
-/data/weights/mistral
+/data/weights/mistral-7B
 /data/weights/qwen3-8B
 /data/weights/e5-base-v2
 ```
@@ -109,7 +109,7 @@ Run the BoxOffice experiments:
 
 ```bash
 GPUS="0 1" \
-MODELS="/data/weights/llama3.1-8BI /data/weights/mistral /data/weights/qwen3-8B" \
+MODELS="/data/weights/llama3.1-8BI /data/weights/mistral-7B /data/weights/qwen3-8B" \
 bash scripts/run_boxoffice.sh
 ```
 
@@ -123,7 +123,7 @@ Run the LongBench experiments:
 
 ```bash
 GPUS="0 1" \
-MODELS="/data/weights/llama3.1-8BI /data/weights/mistral /data/weights/qwen3-8B" \
+MODELS="/data/weights/llama3.1-8BI /data/weights/mistral-7B /data/weights/qwen3-8B" \
 DATASETS="musique_lb 2wiki_lb hotpotqa_lb" \
 bash scripts/run_longbench.sh
 ```

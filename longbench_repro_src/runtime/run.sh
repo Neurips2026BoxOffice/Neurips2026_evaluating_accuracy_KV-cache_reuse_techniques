@@ -53,7 +53,7 @@ if ! [[ "$PACK" =~ ^[0-9]+$ ]] || [ "$PACK" -lt 1 ]; then
     echo "PACK must be a positive integer (got: $PACK)" >&2; exit 2
 fi
 
-MODELS="${MODELS:-/data/weights/llama3.1-8BI /data/weights/mistral /data/weights/qwen3-8B}"
+MODELS="${MODELS:-/data/weights/llama3.1-8BI /data/weights/mistral-7B /data/weights/qwen3-8B}"
 DATASETS="${DATASETS:-musique_lb 2wiki_lb hotpotqa_lb}"
 GPUS="${GPUS:-0}"
 SHARDS="${SHARDS:-1}"

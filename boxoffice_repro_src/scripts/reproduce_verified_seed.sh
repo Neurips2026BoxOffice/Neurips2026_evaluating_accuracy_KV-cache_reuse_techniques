@@ -24,7 +24,7 @@ HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 DEVICE_POOL_CSV="${DEVICE_POOL_CSV:-0,1}"
 MAX_PARALLEL_JOBS="${MAX_PARALLEL_JOBS:-6}"
-MODELS_CSV="${MODELS_CSV:-qwen3_8B,llama3.1-8BI,mistral}"
+MODELS_CSV="${MODELS_CSV:-qwen3_8B,llama3.1-8BI,mistral-7B}"
 BUILD_POOL="${BUILD_POOL:-0}"
 DEVICES_CSV="${DEVICES_CSV:-0,1}"
 

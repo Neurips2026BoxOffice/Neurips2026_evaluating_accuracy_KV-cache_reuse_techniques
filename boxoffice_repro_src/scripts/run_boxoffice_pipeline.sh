@@ -9,7 +9,7 @@ RUNTIME_BOXOFFICE="$ROOT/runtime"
 GPUS="${GPUS:-}"
 
 SEEDS="${SEEDS:-7 11 13 17 19 23 29 31 47 73}"
-MODELS="${MODELS:-/data/weights/llama3.1-8BI /data/weights/mistral /data/weights/qwen3-8B}"
+MODELS="${MODELS:-/data/weights/llama3.1-8BI /data/weights/mistral-7B /data/weights/qwen3-8B}"
 PACK="${PACK:-1}"
 POOL_PACK="${POOL_PACK:-1}"
 BUILD_POOL="${BUILD_POOL:-1}"

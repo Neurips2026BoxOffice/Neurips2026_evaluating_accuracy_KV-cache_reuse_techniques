@@ -19,7 +19,7 @@ GEN_ROOT="${GEN_ROOT}" \
 RUN_ROOT="${OUT_ROOT}" \
 WARM_FUSION_DOCS="${WARM_FUSION_DOCS}" \
 DEVICE_POOL_CSV="${DEVICE_POOL_CSV:-0,1}" \
-MODELS_CSV="${MODELS_CSV:-qwen3_8B,llama3.1-8BI,mistral}" \
+MODELS_CSV="${MODELS_CSV:-qwen3_8B,llama3.1-8BI,mistral-7B}" \
 bash "${GEN_ROOT}/experiments/v2_filtered/run_joint_filtered_probe.sh"
 
 echo "${OUT_ROOT}"

@@ -50,7 +50,7 @@ Example:
 
 ```bash
 cd runtime
-MODELS="/data/weights/llama3.1-8BI" \
+MODELS="/data/weights/llama3.1-8BI /data/weights/mistral-7B /data/weights/qwen3-8B" \
 DATASETS="musique_lb 2wiki_lb hotpotqa_lb" \
 GPUS="0 1" \
 bash run.sh

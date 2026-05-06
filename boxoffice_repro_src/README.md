@@ -51,7 +51,7 @@ weights available locally.
 Validated defaults:
 
 - visible accelerator slots: `0,1`
-- filter models: `qwen3_8B,llama3.1-8BI,mistral`
+- filter models: `qwen3_8B,llama3.1-8BI,mistral-7B`
 - warm-retrieval embedding model: `e5-base-v2`
 - max concurrent eval jobs: `6`
 
@@ -313,7 +313,7 @@ Phase 2 filtered-v2 generation:
 
 ```bash
 DEVICE_POOL_CSV=0,1 MAX_PARALLEL_JOBS=6 \
-MODELS_CSV=qwen3_8B,llama3.1-8BI,mistral \
+MODELS_CSV=qwen3_8B,llama3.1-8BI,mistral-7B \
 bash scripts/02_regenerate_filtered_v2_from_corpus.sh
 ```
 
@@ -338,7 +338,7 @@ The default filter model set is:
 
 - `qwen3_8B`
 - `llama3.1-8BI`
-- `mistral`
+- `mistral-7B`
 
 To use a different subset:
 
