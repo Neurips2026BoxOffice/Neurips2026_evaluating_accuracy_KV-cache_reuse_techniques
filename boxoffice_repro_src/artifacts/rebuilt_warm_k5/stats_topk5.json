@@ -1,0 +1,23 @@
+{
+  "cache_entries": 0.0,
+  "cache_export_skipped": true,
+  "canonical_text_mode": "long_movie_chunk_count_tokens_none",
+  "chunk_target_tokens": 512,
+  "corpus_films": 100,
+  "embedding_batch_size": 32,
+  "embedding_device": "npu:0",
+  "embedding_model_path": "/data/weights/e5-base-v2",
+  "model_path": "/data/weights/qwen3-8B",
+  "out_cache_pt": null,
+  "out_canonical_retrieval": "/tmp/boxoffice_repro_src/scripts/../artifacts/rebuilt_warm_k5/canonical_retrieval_topk5.jsonl",
+  "out_fusion_docs": "/tmp/boxoffice_repro_src/scripts/../artifacts/rebuilt_warm_k5/fusion_docs_topk5.jsonl",
+  "out_soup": "/tmp/boxoffice_repro_src/scripts/../artifacts/rebuilt_warm_k5/soup_topk5.jsonl",
+  "retrieval_mode": "embedding",
+  "skipped_entries": 0.0,
+  "source_jsonl": [
+    "/tmp/boxoffice_repro_src/scripts/../data/phase2_boxoffice_balanced_matrix_s7.jsonl",
+    "/tmp/boxoffice_repro_src/scripts/../data/phase2_boxoffice_balanced_matrix_s11.jsonl",
+    "/tmp/boxoffice_repro_src/scripts/../data/supplemental_boxoffice_corpus_v1_50.jsonl"
+  ],
+  "top_k": 5
+}

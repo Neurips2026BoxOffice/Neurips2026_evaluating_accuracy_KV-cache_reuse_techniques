@@ -1,0 +1,4 @@
+Valid candidates: FILM-XXXX, FILM-XXXX, FILM-XXXX, FILM-XXXX, FILM-XXXX, FILM-XXXX, FILM-XXXX, FILM-XXXX, FILM-XXXX, FILM-XXXX
+Which valid FILM-ID has the maximum BOX_OFFICE_MUSD among all listed candidates?
+Read the BOX_OFFICE_MUSD field from the dossiers; do not infer values from titles.
+Return exactly one valid FILM-ID.

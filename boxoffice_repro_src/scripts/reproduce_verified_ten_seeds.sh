@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Reproduce the full verified ten-seed release using the validated defaults.
+set -euo pipefail
+
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+if [[ "${REBUILD_WARM:-0}" == "1" ]]; then
+  REBUILD_WARM=1 bash "${HERE}/reproduce_verified_seed.sh" 7
+else
+  bash "${HERE}/reproduce_verified_seed.sh" 7
+fi
+
+bash "${HERE}/reproduce_verified_seed.sh" 11
+bash "${HERE}/reproduce_verified_seed.sh" 13
+bash "${HERE}/reproduce_verified_seed.sh" 17
+bash "${HERE}/reproduce_verified_seed.sh" 19
+bash "${HERE}/reproduce_verified_seed.sh" 23
+bash "${HERE}/reproduce_verified_seed.sh" 29
+bash "${HERE}/reproduce_verified_seed.sh" 31
+bash "${HERE}/reproduce_verified_seed.sh" 47
+bash "${HERE}/reproduce_verified_seed.sh" 73

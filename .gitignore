@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+
+boxoffice_repro_src/runtime/output/
+boxoffice_repro_src/runtime/pool/
+boxoffice_repro_src/runtime/*.log
+longbench_repro_src/runtime/output/
+longbench_repro_src/runtime/*.log

@@ -1,0 +1,1 @@
+Use only the synthetic movie dossiers below. Ignore outside/world knowledge. For ranking, compare only the BOX_OFFICE_MUSD integer fields across all named candidates. Return exactly one FILM-ID and no other text.
