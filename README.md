@@ -12,8 +12,6 @@ The release is organized as three sibling bundles:
 - `longbench_repro_src/`
   - LongBench enrichment assets and LongBench runtime
 
-Figure-generation code is intentionally not included in this release yet.
-
 ## What is included
 
 - the shared implementations for the cache-reuse methods used in the paper
@@ -97,6 +95,13 @@ Reproduce the released BoxOffice seeds using the bundled warm metadata:
 
 ```bash
 bash scripts/reproduce_boxoffice_seeds.sh
+```
+
+Reproduce one verified BoxOffice seed while reusing the bundled warm
+similarity metadata:
+
+```bash
+bash boxoffice_repro_src/scripts/reproduce_verified_seed.sh 7
 ```
 
 Regenerate one BoxOffice seed from scratch, including warm similarity rebuild:

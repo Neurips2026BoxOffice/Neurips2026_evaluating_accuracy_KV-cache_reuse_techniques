@@ -1,2 +1,2 @@
-pandas
-numpy
+-r ../cache_methods_src/requirements.txt
+pandas==2.3.3
